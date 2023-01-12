@@ -62,6 +62,10 @@
     margin: 16px 0 40px;
 }
 
+.btn-link {
+    border-radius: 100px;
+}
+
 .btn-projects {
     color: #ffffff;
     font-size: 1rem;
@@ -72,13 +76,6 @@
     padding: 15px 40px;
     border: 1px solid var(--green-color);
 }
-
-/* .btn-projects:hover { PARA LA VERSION DESKTOP
-    background-color: #42d5c2;
-    color: white;
-    transition: 0.2s;
-    box-shadow: 0px 0px 10px #00BFA6;
-} */
 
 .figure-content {
     display: flex;
@@ -168,7 +165,7 @@
     font-weight: 700;
 }
 
-/* QUOTE CONTAINER */
+/* ### QUOTE CONTAINER ### */
 
 .quote-container {
     background-color: var(--green-color);
@@ -445,7 +442,7 @@ input:focus, textarea:focus {
 
 /* PREGUNTAR:
 4- COMO AGREGAR LA TILDE O LA X EN EL FORMULARIO SEGUN CORRESPONDA (supongo que predeterminado hide para ambos 
-y depende si se cumplen a no las condiciones preestablecidas aparecera uno o el otro, preguntar)
+y dependiendo si se cumplen o no las condiciones preestablecidas en el input aparecera uno o el otro, preguntar)
 */
 
 
@@ -532,10 +529,6 @@ y depende si se cumplen a no las condiciones preestablecidas aparecera uno o el 
     input {
         width: 80%;
     }
-
-/*     .form-box {
-        max-width: fit-content;
-    } */
 
     .form-textarea {
         width: 100%;
