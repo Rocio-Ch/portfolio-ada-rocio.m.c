@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap');
+
+:root {
+    --text-grey: #2e2e31;
+    --text-lightgrey: #616161;
+    --green-color: #00BFA6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.navbar {
+    display: none;
+}
+
+.main {
+    min-height: calc(100vh - 90px);
+    margin-top: 90px;
+}
+
+/* ### COMIENZA SECCION INFO SOBRE MI ### */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.about-greeting {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: var(--text-grey);
+    margin-bottom: 5px;
+}
+
+.about-name {
+    font-size: 2.9rem;
+    color: var(--green-color);
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.about-description {
+    color: var(--text-lightgrey);
+    font-size: 1rem;
+    margin: 16px 0 40px;
+}
+
+.btn-projects {
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: var(--green-color);
+    border-radius: 100px;
+    padding: 15px 40px;
+    border: 1px solid var(--green-color);
+}
+
+/* .btn-projects:hover { PARA LA VERSION DESKTOP
+    background-color: #42d5c2;
+    color: white;
+    transition: 0.2s;
+    box-shadow: 0px 0px 10px #00BFA6;
+} */
+
+.figure-content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    margin: 40px 0 80px;
+}
+
+.about-img {
+    width: 95%;
+    height: 95%;
+    max-width: 500px;
+}
+
+/* ### FINAL SECCION INFO SOBRE MI ### */
+
+
+
+
+/* ### COMIENZO SECCION SKILLS ### */
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f6f7fb;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 40px 0 40px; 
+}
+
+.description-text {
+    color: var(--text-grey);
+    text-align: center;
+    width: 85%;
+    display: flex;
+    align-self: center;
+}
+
+/* SKILLS CONTAINER */
+
+.skills-container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 70px 0;
+}
+
+.skills-figure {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(209, 206, 206, 0.705);
+    margin: 0 10px 10px 0;
+    padding: 30px 10px;
+    border-radius: 10px;
+    color: var(--text-grey);
+    background-color: #f6f7fb;
+}
+
+.skills-figure:active, .skills-figure:active .skills-name {
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+
+.skills-img {
+    width: 30%;
+    margin: 20px 0 20px 0;
+}
+
+.skills-name {
+    font-size: 16px;
+    color: var(--text-grey);
+    font-weight: 700;
+}
+
+/* QUOTE CONTAINER */
+
+.quote-container {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: 60px 10px;
+}
+
+.cite {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.quote-icon {
+    font-size: 7rem;
+}
+
+blockquote {
+    margin: 30px 0 50px;
+    width: 90%;
+}
+
+.quote-text {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.quote-author {
+    font-weight: 900;
+    font-size: 1.69rem;
+}
+
+
+
+/* ### PROJECTS ### */
+
+.projects {
+    width: 100%;
+    padding: 80px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.card-link {
+    margin: 10px 0;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgba(209, 206, 206, 0.705);
+    border-radius: 10px;
+    color: var(--text-grey);
+}
+
+.card-link:active, .card-link:active .project-content .card-description {
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+
+.card-link:active {
+    box-shadow: 0px 0px 10px #00BFA6;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-description {
+    padding: 30px 0;
+    font-weight: 600;
+}
+
+
+/* ### CONTACT SECTION ### */
+
+.contact-section {
+    padding: 20px 15px 70px;
+    width: 100%;
+}
+
+.contact-info {
+    padding-right: 20px;
+}
+
+.contact-title {
+    text-align: start;
+}
+
+.description-contact {
+    color: var(--text-grey);
+    max-width: 400px;
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+/* ### SOCIAL MEDIA CONTACT BOX ### */
+
+.contact-box {
+   padding: 15px 0;
+}
+
+.ul-contact {
+    list-style-type: none;
+}
+
+.menu-contact-item {
+    margin: 10px 0;
+}
+
+.menu-contact-link {
+    display: flex;
+    align-items: center;
+    padding: 5px 7px;
+    border-radius: 100px;
+    max-width: fit-content;
+    color: var(--text-grey);
+    font-weight: 500;
+    border: 1px solid #fff;
+    font-size: 1rem;
+}
+
+.menu-contact-link:active { 
+    color: var(--green-color);
+}
+
+.menu-contact-link:active { /* Al clickear el elemento a, aparece el borde y la sombra verde */
+    border: 1px solid var(--green-color);
+    box-shadow: 0px 0px 10px #00BFA6;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: var(--green-color);
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.menu-contact-link:active .contact-icon { /* aca le estoy diciendo: agarra el icono que se encuentra dentro del
+    menu-contact-link y cuando se aplique el hover cambia estos estilos */
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+
+/* FORM */
+
+.form-container {
+    width: 100%;
+}
+
+.box-namelastname {
+    margin: 30px 0;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: var(--text-grey);
+    max-width: 100%;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    font-size: 1rem;
+    color: #019e89;
+    border-radius: 25px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    padding: 10px 15px;
+    width: 100%;
+    font-weight: 500;
+}
+
+input::placeholder {
+    font-size: .9rem;
+}
+
+textarea::placeholder {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0px 0px 10px #00BFA6;
+    outline: none;
+}
+
+.contact-btn {
+    background-color: var(--green-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 15px 40px;
+    border: 1px solid var(--green-color);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* ### FOOTER ### */
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 40px 20px 40px;
+}
+
+.menu-contact {
+    display: none;
+}
+
+.social-menu {
+    display: flex;
+    margin: 50px;
+
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+
+.social-li {
+    list-style-type: none;
+    margin: 9px;
+}
+
+.social-icon {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: var(--green-color);
+    border-radius: 50px;
+    font-size: 1.1rem;
+    padding: .8rem;
+}
+
+.social-icon:active {
+    background-color: var(--green-color);
+    color: #fff;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+/* PREGUNTAR:
+4- COMO AGREGAR LA TILDE O LA X EN EL FORMULARIO SEGUN CORRESPONDA (supongo que predeterminado hide para ambos 
+y depende si se cumplen a no las condiciones preestablecidas aparecera uno o el otro, preguntar)
+*/
+
+
+/* ### MEDIA QUERYS ### */
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 900px) {
+    
+    .about-name {
+        font-size: 3.75rem;
+    }
+
+    /* SKILLS */
+    .skills-figure {
+        width: 35%;
+        padding: 30px 10px;
+    }
+
+    .skills-img {
+        width: 35%;
+    }
+
+    .skills-name {
+        font-size: 1.25rem;
+    }
+
+    /* QUOTE */
+    .quote-text {
+        font-size: 1.188rem;
+        line-height: 1.4;
+    }
+
+
+    .section-title {
+        font-size: 2.813rem;
+    }
+    
+    .description-text {
+        width: 65%;
+        display: flex;
+        align-self: center;
+    }    
+    
+    /* PROJECTS */
+    .projects {
+        padding: 80px 30px 40px;
+    }
+
+    .projects-container {
+        justify-content: space-between;
+    }
+
+    .card-link {
+        width: 45%;
+        margin: 15px;
+    }
+
+    /* CONTACT */
+    .contact-section {
+        padding: 20px 40px 50px;
+        margin: 100px 0;
+    }
+
+    .ul-contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-contact-item {
+        margin: 5px 0;
+        width: 50%;
+    }
+
+    /* FORM */
+    .box-namelastname {
+        display: flex;
+        width: 100%;
+    }
+
+    .form-name-lastname {
+        width: 50vw;
+    }
+
+    input {
+        width: 80%;
+    }
+
+/*     .form-box {
+        max-width: fit-content;
+    } */
+
+    .form-textarea {
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    .contact {
+        padding: 70px 20px;
+    }
+    
+    .menu-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-menu {
+        display: flex;
+        margin: 20px;
+    }
+
+    .menu-ul {
+        display: flex;
+    }
+
+    .menu-li {
+        list-style-type: none;
+        padding: 0 8px;
+    }
+
+    .footer-menu {
+        color: inherit;
+        text-transform: uppercase;
+    }
+}
+
+/*LAPTOP PEQUEÑA o NETBOOK */
+
+@media (min-width: 901px) {
+
+    .description-text {
+        width: 58%;
+    }
+
+    .skills-container {
+        width: 901px;
+    }
+
+    .skills-figure {
+        width: 25%;
+        margin: 0 20px 20px 0;
+        height: 250px;
+    }
+
+    .skills-img {
+        width: 30%;
+    }
+
+    .quote-text {
+        font-size: 1.2rem;
+    }
+
+    .projects-container {
+        justify-content: space-between;
+    }
+
+    .card-link {
+        margin: 10px 0;
+        width: 32%;
+    }
+
+    .contact-section {
+        display: flex;
+        text-align: left;
+        background-color: #ffffff;
+        border-radius: 15px;
+        border: 1px solid #e0e0e0;
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    .contact-info, .form-container {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .contact-info {
+        margin-right: 20px;
+    }
+
+    .form-container {
+        padding-left: 20px;
+    }
+
+    .box-namelastname {
+        display: flex;
+        margin: 15px 0;
+    }
+
+    .form-name-lastname {
+        margin-right: 10px;
+    }
+
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .menu-contact {
+        display: flex;
+    }
+
+    .menu-ul {
+        display: flex;
+    }
+
+    .menu-li {
+        list-style-type: none;
+        padding: 8px;
+    }
+
+    .footer-menu {
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .social-menu {
+        display: flex;
+        margin: 20px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+}
+
+
+/* DESKTOP */
+@media (min-width: 1101px) {
+    header {
+        width: 100%;
+        position: fixed;
+        padding: 32px;
+        top: 0;
+        background-color: #fff;
+        box-shadow: 1px 1px 20px 0px #07806f78;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        margin: auto;
+        width: 100%;
+        max-width: 1101px;
+    }
+
+    .nav-ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .item-menu {
+        list-style-type: none;
+        margin: 0 5px;
+    }
+    
+    .nav-link {
+        padding: 10px 20px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #2e2e31;
+        letter-spacing: 0.05rem;
+        border: 1px solid #fff;
+    }
+
+    .nav-link:active, .contact-btn:active, .btn-projects:active {
+        border: 1px solid var(--green-color);
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px -1px rgb(2, 207, 180);
+    }
+
+    .nav-button {
+        border: 1px solid var(--green-color);
+        background-color: var(--green-color);
+        color: #fff;
+        border-radius: 50px;
+    }
+
+    .nav-button:hover, .contact-btn:hover, .btn-projects:hover {
+        background-color: #42d5c2;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .about-me {
+        flex-direction: row;
+        width: 1101px;
+        padding: 50px;
+        min-height: calc(100vh - 90px);
+        margin: 0 auto;
+    }
+
+    .about-content {
+        align-items: baseline;
+        text-align: start;
+    }
+
+    .about-name {
+        font-size: 3.75rem;
+    }
+
+    .about-description {
+        width: 80%;
+    }
+
+    .section-title {
+        font-size: 2.813rem;
+    }
+
+    .description-text {
+        width: 35%;
+    }
+
+    .skills-figure:hover, .skills-figure:hover .skills-name {
+        border-color: var(--green-color);
+        color: var(--green-color);
+    }
+
+    .quote-container {
+        padding: 150px 10px;
+    }
+
+    .cite {
+        width: 1101px;
+        margin: 0 auto;
+    }
+
+    .quote-text {
+        font-size: 1.4rem;
+    }
+
+    .projects-container {
+        width: 1101px;
+        margin: 0 auto;
+    }
+
+    .contact-section {
+        width: 60%;
+        margin: 200px auto;
+    }
+
+    .card-link:hover { 
+        border-color: var(--green-color);
+        color: var(--green-color);
+    }
+    
+    .menu-contact-link:hover { /*con hover cambio @RocioChaparro de gris a verde*/
+        color: var(--green-color);
+    }
+
+    .menu-contact-link:hover .contact-icon { /* aca le estoy diciendo: agarra el icono que se encuentra dentro del
+        menu-contact-link y cuando se aplique el hover cambia estos estilos */
+        background-color: var(--green-color);
+        color: #fff;
+    }
+
+    .social-icon:hover {
+        background-color: var(--green-color);
+        color: #fff;
+    }
+
+}

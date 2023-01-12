@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="./mobile.css">
+    <!--Icono favicon personalizado para el titulo de la pag-->
+    <link rel="shortcut icon" href="./ilustrations/Favicon-Personalizado/favicon-16x16.png">
+    <!--Iconos de HTML, CSS, etc de DEVICON-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!--Icono comillas de font awesome, no perder el link!!-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+<body class="body">
+    <header>
+        <nav class="navbar">
+            <ul class="nav-ul">
+                <li class="item-menu"><a href="#about" class="nav-link">Hola</a></li>
+                <li class="item-menu"><a href="#skills" class="nav-link">Conocimientos</a></li>
+                <li class="item-menu"><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li class="item-menu"><a href="#contact" class="nav-link nav-button">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- Sobre mi -->
+        <section id="about" class="about-me">
+            <article class="about-content">
+                <p class="about-greeting">¡Hola! Soy</p>
+                <h1 class="about-name">Ada Lovelace</h1>
+                <p class="about-description">Desarrolladora Frontend, diseñadora Web y amante de la música</p>
+                <button id="#projects" class="btn-projects">Lo que hago</button>
+            </article>
+            <figure class="figure-content">
+                <img class="about-img" src="./ilustrations1/software-engineer.svg" width="550" height="550" />
+            </figure>
+        </section>
+        <!-- Skills -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Mis conocimientos</h2>
+            <p class="description-text">Estos son los conocimientos que adquirí de la carrera Frontend Developer en Ada ITW </p>
+            <section class="skills-container">
+                <figure class="skills-figure">
+                    <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Icono de HTML 5"/>      
+                    <figcaption class="skills-name">HTML 5</figcaption> 
+                </figure>
+                <figure class="skills-figure">
+                    <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Icono de CSS 3"/>
+                    <figcaption class="skills-name">CSS 3</figcaption>
+                </figure>
+                <figure class="skills-figure">    
+                    <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Icono de Sass"/>
+                    <figcaption class="skills-name">Sass</figcaption>
+                </figure>
+                <figure class="skills-figure">          
+                    <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Icono de JavaScript"/>
+                    <figcaption class="skills-name">JavaScript</figcaption>
+                </figure>
+                <figure class="skills-figure">
+                    <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Icono de React"/>      
+                    <figcaption class="skills-name">React</figcaption>
+                </figure>
+                <figure class="skills-figure">
+                    <img class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Icono de Git"/>
+                    <figcaption class="skills-name">Git</figcaption>
+                </figure>
+            </section>
+        </section>
+        <!-- Cita -->
+        <section class="quote-container">
+            <div class="cite">
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+                <blockquote cite="#">
+                    <p class="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum hic aspernatur voluptate perferendis minus veritatis, quasi est fugit et omnis. Ratione mollitia cumque esse, veritatis magnam quod atque blanditiis saepe. Ratione mollitia cumque!</p>
+                </blockquote>
+                <h2 class="quote-author">Someone</h2>
+            </div>
+        </section>
+        <!-- Proyectos -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Mis proyectos</h2>
+            <p class="description-text">Estos son los proyectos que desarrolle a lo largo del curso de ADA ITW</p>
+            <article class="projects-container">
+                <a class="card-link" href="#" target="_blank">
+                    <figure class="project-content">
+                        <img class="card-img" src="./ilustrations1/software-engineer.svg" alt="Hombre andando bicicleta">
+                        <figcaption class="card-description">Portfolio</figcaption>
+                    </figure>
+                </a>
+                <a class="card-link" href="#" target="_blank">
+                    <figure class="project-content">
+                        <img class="card-img" src="./ilustrations1/software-engineer.svg" alt="Mujer sentada buscando direcciones en gps">
+                        <figcaption class="card-description">Generador de memes</figcaption>
+                    </figure>
+                </a>
+                <a class="card-link" href="#" target="_blank">
+                    <figure class="project-content">
+                        <img class="card-img" src="./ilustrations1/software-engineer.svg" alt="Pantalla mobil de app de fotos">
+                        <figcaption class="card-description">Match 3</figcaption>
+                    </figure>
+                </a>
+                <a class="card-link" href="#" target="_blank">
+                    <figure class="project-content">
+                        <img class="card-img" src="./ilustrations1/software-engineer.svg" alt="Mujer al lado de un calendario">
+                        <figcaption class="card-description">Controlador de gastos</figcaption>
+                    </figure>
+                </a>
+                <a class="card-link" href="#" target="_blank">
+                    <figure class="project-content">
+                        <img class="card-img" src="./ilustrations1/software-engineer.svg" alt="Mujer y hombre cenando">
+                        <figcaption class="card-description">Administrador de reuniones</figcaption>
+                    </figure>
+                </a>
+                <a class="card-link" href="#" target="_blank">
+                    <figure class="project-content">
+                        <img class="card-img" src="./ilustrations1/software-engineer.svg" alt="Hombre sentado en valija de viaje">
+                        <figcaption class="card-description">Todo app</figcaption>
+                    </figure>
+                </a>
+                <a class="card-link" href="#" target="_blank">
+                    <figure class="project-content">
+                        <img class="card-img" src="./ilustrations1/software-engineer.svg" alt="Mujer y hombre con un joystick y unos auriculares">
+                        <figcaption class="card-description">Buscador de películas</figcaption>
+                    </figure>
+                </a>
+            </article>
+        </section>
+        <!-- Contacto y social media -->       
+        <section id="contact" class="contact-section">
+            <section class="contact-info">
+                <h2 class="section-title contact-title">Contactame</h2>
+                <p class="description-contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.</p>
+                <section class="contact-box">
+                    <ul class="ul-contact">
+                        <li class="menu-contact-item">
+                            <a class="menu-contact-link" href="#">
+                                <i class="fa-brands fa-twitter contact-icon"></i>
+                                @RocioChaparro
+                            </a>
+                        </li>
+                        <li class="menu-contact-item">
+                            <a class="menu-contact-link" href="#">
+                                <i class="fa-brands fa-github-alt contact-icon"></i>
+                                RocioChaparro
+                            </a>
+                        </li>
+                        <li class="menu-contact-item">
+                            <a class="menu-contact-link" href="#">
+                                <i class="fa-brands fa-linkedin-in contact-icon"></i>
+                                rociochaparro
+                            </a>
+                        </li>
+                        <li class="menu-contact-item">
+                            <a class="menu-contact-link" href="#">
+                                <i class="fa-solid fa-envelope contact-icon"></i>
+                                rocio.chaparro@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="form-container">
+                <h2 class="section-title contact-title">Escribeme</h2>
+                <form class="contact-form">
+                    <div class="box-namelastname">
+                        <div class="form-box form-name-lastname">
+                            <label for="name">Nombre *</label>
+                            <input type="text" id="name" name="name" placeholder="p. ej.: Rocio" required>
+                        </div>
+                        <div class="form-box form-name-lastname">
+                            <label for="lastname">Apellido *</label>
+                            <input type="text" id="" name="lastname" placeholder="p. ej.: Chaparro" required>
+                        </div>
+                    </div>
+                    <div class="form-box">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="p. ej.: rocio.chaparro@gmail.com" required>
+                    </div>
+                    <div class="form-box form-textarea">
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" cols="30" rows="10" required placeholder="Escriba un mensaje aquí"></textarea>
+                    </div>
+                    <button class="contact-btn">Enviar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer class="contact">
+        <section class="menu-contact">
+            <ul class="menu-ul">
+                <li class="menu-li">
+                    <a href="#about" class="footer-menu">Hola</a>
+                </li>
+                <li class="menu-li">
+                    <a href="#skills" class="footer-menu">Conocimientos</a>
+                </li>
+                <li class="menu-li">
+                    <a href="#projects" class="footer-menu">Proyectos</a>
+                </li>
+                <li class="menu-li">
+                    <a href="#contact" class="footer-menu">Contactos</a>
+                </li>
+            </ul>
+        </section>
+        <section class="social-media">
+            <ul class="social-menu">
+                <li class="social-li">
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-twitter social-icon"></i>
+                    </a>
+                </li>
+                <li class="social-li">
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-github-alt social-icon"></i>
+                    </a>
+                </li>
+                <li class="social-li">
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-linkedin-in social-icon"></i>
+                    </a>
+                </li>
+                <li class="social-li">
+                    <a href="#" class="social-link">
+                        <i class="fa-solid fa-envelope social-icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <p class="copyright">Rocío Magalí Chaparro &#169; 2022</p>
+    </footer>
+</body>
+</html>
