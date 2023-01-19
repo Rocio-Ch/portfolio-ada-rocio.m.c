@@ -24,6 +24,10 @@
     margin-top: 90px;
 }
 
+.up {
+    display: none;
+}
+
 /* ### COMIENZA SECCION INFO SOBRE MI ### */
 
 .about-me {
@@ -569,6 +573,24 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
 /*LAPTOP PEQUEÑA o NETBOOK */
 
 @media (min-width: 901px) {
+
+    .up a {
+        color: var(--green-color);
+    }
+
+    /* ICON UP PAGE */
+    .up {
+        display: inline;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 30px;
+        padding: 10px 12px;
+        background-color: #fff;
+        font-size: 1.5rem;
+        border-radius: 50px;
+        cursor: pointer;
+    }
 
     .description-text {
         width: 58%;
