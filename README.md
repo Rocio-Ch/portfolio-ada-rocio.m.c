@@ -43,6 +43,6 @@ Este es el proyecto final con nota individual del módulo 1 en el curso de ADA I
 ### Contacto
 Si te gustó mi proyecto y te interesa mi trabajo, podes contactarme a cualquiera de mis redes sociales.
 
-⚫ Github: https://github.com/Rocio-Ch
-📧 rociomagali77@gmail.com
-🔗 https://www.instagram.com/rmc_nails/?hl=es
+- ⚫ <a name="https://github.com/Rocio-Ch">Github</a> 
+- 📧 <a name="rociomagali77@gmail.com">Gmail</a>
+- 🔗 <a name="https://www.instagram.com/rmc_nails/?hl=es" >Instagram</a>
