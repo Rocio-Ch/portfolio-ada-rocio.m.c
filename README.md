@@ -26,7 +26,7 @@ En este proyecto coloqué una breve descripción sobre mi, seguido de las herram
 ***
 
 ### Ver el proyecto
-Para poder visualizar el proyecto simplemente colocá al siguiente enlace en tu navegador preferido:
+Para poder visualizar el proyecto simplemente colocá el siguiente enlace en tu navegador preferido:
 
 https://cozy-croquembouche-220e01.netlify.app/#projects
 
@@ -35,7 +35,7 @@ Preview del proyecto:
 
 ### Desarrolladores
 Este es el proyecto final con nota individual del módulo 1 en el curso de ADA ITW, por lo tanto su única desarrolladora es:
-- Rociío Magalí Chaparro
+- Rocío Magalí Chaparro
 
 
 
