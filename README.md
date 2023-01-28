@@ -5,7 +5,7 @@ Mi nombre es Rocío Magalí Chaparro, estoy estudiando para convertirme en desar
 
 ## Índice
 
-- [Descripción-del-proyecto](#Descripción-del-proyecto)
+- [Descripción del proyecto](#Descripción-del-proyecto)
 - [Herramientas utilizadas](#Herramientas-utilizadas)
 - [Ver el proyecto](#ver-el-proyecto)
 - [Desarrolladores](#desarrolladores)
