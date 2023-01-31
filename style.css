@@ -5,6 +5,8 @@
     --text-grey: #2e2e31;
     --text-lightgrey: #616161;
     --green-color: #00BFA6;
+    --check-valid: #2dc55b;
+    --check-invalid: #f5414f;
 }
 
 * {
@@ -58,6 +60,7 @@
     color: var(--green-color);
     font-weight: 900;
     margin-bottom: 5px;
+    transition: .4s;
 }
 
 .about-description {
@@ -236,6 +239,15 @@ blockquote {
     color: var(--text-grey);
 }
 
+.card-link .back {
+    background-color: #f6f7fb;
+    position: relative;
+    top: -170px;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
+
 .card-link:active, .card-link:active .project-content .card-description {
     border-color: var(--green-color);
     color: var(--green-color);
@@ -360,13 +372,24 @@ label {
 
 input, textarea {
     font-size: 1rem;
-    color: #019e89;
+    color: var(--text-grey);
     border-radius: 25px;
     background-color: #f6f7fb;
     border: 1px solid #f6f7fb;
-    padding: 10px 15px;
+    padding: 10px 30px 10px 15px;
     width: 100%;
     font-weight: 500;
+}
+
+
+input:valid:not(:placeholder-shown) {
+    border-color: var(--check-valid);
+    box-shadow: 0px 0px 10px var(--check-valid);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: var(--check-invalid);
+    box-shadow: 0px 0px 10px var(--check-invalid);
 }
 
 input::placeholder {
@@ -455,10 +478,6 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 900px) {
     
-    .about-name {
-        font-size: 3.75rem;
-    }
-
     /* SKILLS */
     .skills-figure {
         width: 35%;
@@ -570,7 +589,7 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
     }
 }
 
-/*LAPTOP PEQUEÑA o NETBOOK */
+/*LAPTOP o NOTEBOOK */
 
 @media (min-width: 901px) {
 
@@ -610,6 +629,30 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
         width: 30%;
     }
 
+    .skills-name {
+        visibility: hidden;
+    }
+
+    .skills-figure, .skills-name, .skills-img {
+        transition: .2s;
+    }
+
+    .skills-figure:hover .skills-name {
+        transition-delay: .1s;
+        visibility: visible;
+    }
+
+    .skills-figure:hover .skills-img {
+        transform: scale(150%);  
+    }
+
+    .skills-figure:hover {
+        border-color: var(--green-color);
+        color: var(--green-color);
+        transform: translate(0,-15px);
+        box-shadow: 0px 0px 10px -1px rgb(2, 207, 180);  
+    }
+
     .quote-text {
         font-size: 1.2rem;
     }
@@ -618,9 +661,33 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
         justify-content: space-between;
     }
 
+    .card-link .back {
+        display: block;
+    }
+    
+    .card-link:hover {
+        border-color: var(--green-color);
+        color: var(--green-color);
+        transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        box-shadow: inset 0px 0px 10px #00BFA6;
+        background-color: #f6f7fb;
+    }
+    
+    .card-link:hover .project-content, .back {
+        backface-visibility: hidden;
+    }
+    
+    .card-link .back  {
+        transform: rotateY(180deg);
+    }
+
+
     .card-link {
         margin: 10px 0;
         width: 32%;
+        height: 317px;
+        transition: transform 0.9s;
     }
 
     .contact-section {
@@ -690,7 +757,7 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
 
 
 /* DESKTOP */
-@media (min-width: 1101px) {
+@media (min-width: 1200px) {
     header {
         width: 100%;
         position: fixed;
@@ -698,6 +765,7 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
         top: 0;
         background-color: #fff;
         box-shadow: 1px 1px 20px 0px #07806f78;
+        z-index: 1;/* EVITA QUE LA TARJETA NO QUEDE POR ENCIMA DEL HEADER CUANDO LA CARD QUEDA MUY ARRIBA Y HACEMOS HOVER SIN QUERER*/
     }
 
     .navbar {
@@ -761,6 +829,7 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
 
     .about-name {
         font-size: 3.75rem;
+        transition: .4s;
     }
 
     .about-description {
@@ -775,17 +844,12 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
         width: 35%;
     }
 
-    .skills-figure:hover, .skills-figure:hover .skills-name {
-        border-color: var(--green-color);
-        color: var(--green-color);
-    }
-
     .quote-container {
         padding: 150px 10px;
     }
 
     .cite {
-        width: 1101px;
+        max-width: 1101px;
         margin: 0 auto;
     }
 
@@ -801,11 +865,6 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
     .contact-section {
         width: 60%;
         margin: 200px auto;
-    }
-
-    .card-link:hover { 
-        border-color: var(--green-color);
-        color: var(--green-color);
     }
     
     .menu-contact-link:hover { /*con hover cambio @RocioChaparro de gris a verde*/

@@ -15,7 +15,7 @@ Mi nombre es Rocío Magalí Chaparro, estoy estudiando para convertirme en desar
 
 ### Descripción del proyecto
 
-En este proyecto coloqué una breve descripción sobre mi, seguido de las herramientas necesarias que utilicé para llevarlo a cabo, imagenes de otros proyectos para que conozcan mi trabajo y una sección de contacto.
+En este proyecto coloqué una breve descripción sobre mi, seguido de las herramientas necesarias que utilicé para llevarlo a cabo, imagenes de otros proyectos para que conozcan mi trabajo y una sección de contacto. Cuenta con media queries y es totalmente adaptativo tanto en mobile, tablet y desktop.
 ***
 
 ### Herramientas utilizadas
