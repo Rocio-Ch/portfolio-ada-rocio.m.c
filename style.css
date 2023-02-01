@@ -386,7 +386,7 @@ input, textarea {
 }
 
 
-input:valid:not(:placeholder-shown) {
+input:valid:not(:placeholder-shown), textarea {
     border-color: var(--check-valid);
     box-shadow: 0px 0px 10px var(--check-valid);
 }
