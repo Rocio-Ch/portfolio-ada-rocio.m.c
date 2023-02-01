@@ -31,7 +31,7 @@ Para poder visualizar el proyecto simplemente colocá el siguiente enlace en tu 
 https://cozy-croquembouche-220e01.netlify.app/#projects
 
 Preview del proyecto:
-![Preview del portfolio](/ilustrations1/portfolio-preview.JPG)
+![Preview del portfolio](/ilustrations1/portfolio-preview.jfif)
 
 ### Desarrolladores
 Este es el proyecto final con nota individual del módulo 1 en el curso de ADA ITW, por lo tanto su única desarrolladora es:
