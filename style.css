@@ -96,6 +96,8 @@
     width: 95%;
     height: 95%;
     max-width: 500px;
+    background-color: #00bf8f45;
+    border-radius: 40px;
 }
 
 /* ### FINAL SECCION INFO SOBRE MI ### */
@@ -265,6 +267,8 @@ blockquote {
 
 .card-img {
     width: 100%;
+    background-color: #00bf8f45;
+    border-radius: 10px;
 }
 
 .card-description {
