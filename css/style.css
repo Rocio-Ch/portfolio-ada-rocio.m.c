@@ -443,7 +443,6 @@ input:focus, textarea:focus {
 .social-menu {
     display: flex;
     margin: 50px;
-
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -572,12 +571,7 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
         align-items: center;
         justify-content: center;
     }
-
-    .social-menu {
-        display: flex;
-        margin: 20px;
-    }
-
+    
     .menu-ul {
         display: flex;
     }
@@ -746,11 +740,6 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
     .footer-menu {
         text-transform: uppercase;
         color: #fff;
-    }
-
-    .social-menu {
-        display: flex;
-        margin: 20px;
     }
 
     .copyright {
