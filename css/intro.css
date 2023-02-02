@@ -6,8 +6,11 @@
     padding: 0;
 }
 
-body header {
-    display: none;
+body {
+    background-image: url(../ilustrations1/background-intro.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 html {
