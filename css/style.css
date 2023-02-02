@@ -177,7 +177,7 @@
 /* ### QUOTE CONTAINER ### */
 
 .quote-container {
-    background-color: var(--green-color);
+    background: linear-gradient(360deg, rgba(0,191,166,1) 37%, rgba(35,143,223,1) 100%);
     width: 100%;
     padding: 60px 10px;
 }
