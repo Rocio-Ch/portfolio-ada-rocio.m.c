@@ -27,7 +27,7 @@ body {
     font-size: 2rem;
     color: #00BFA6;
     color: white;
-    text-shadow: 1px 1px 2px #0aeac8;
+    text-shadow: 0px 0px 10px rgb(24, 21, 21);
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 50px;
 }
@@ -41,7 +41,7 @@ body {
     cursor: pointer;
     color: #1aa691;
     font-weight: 600;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 0px 0px 10px rgb(24, 21, 21);;
 }
 
 .intro-menu a:active {
