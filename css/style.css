@@ -233,6 +233,8 @@ blockquote {
 }
 
 .card-link {
+    display: flex;
+    flex-direction: column;
     margin: 10px 0;
     width: 80%;
     padding: 10px;
@@ -242,13 +244,15 @@ blockquote {
 }
 
 .card-link .back {
-    background-color: #f6f7fb;
-    position: relative;
-    top: 115px;
+    align-self: center;
+    position: absolute;
+    visibility: hidden;
+    top: 40%;
     font-weight: 700;
     text-align: center;
     opacity: 0%;
     background-color: transparent;
+    font-size: 1rem;
 }
 
 .card-link:active, .card-link:active .project-content .card-description {
@@ -665,7 +669,6 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
         margin: 10px 0;
         width: 32%;
         height: 317px;
-        display:inline-block;
         position:relative;
     }
 
@@ -697,9 +700,14 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
         transition: opacity .7s;
     }
 
+    .card-link .back {
+        width: 90%;
+    }
+
     .card-link:hover .back {
+        visibility: visible;
         opacity: 100%;
-        transform: scale(103%);
+        transform: scale(102%);
         color: var(--green-color);
         transition-delay: .9s;
         transition: .9s;
