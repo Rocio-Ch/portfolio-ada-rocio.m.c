@@ -244,10 +244,11 @@ blockquote {
 .card-link .back {
     background-color: #f6f7fb;
     position: relative;
-    top: -170px;
+    top: 115px;
     font-weight: 700;
     text-align: center;
-    display: none;
+    opacity: 0%;
+    background-color: transparent;
 }
 
 .card-link:active, .card-link:active .project-content .card-description {
@@ -269,6 +270,7 @@ blockquote {
     width: 100%;
     background-color: #00bf8f45;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 .card-description {
@@ -659,33 +661,48 @@ y dependiendo si se cumplen o no las condiciones preestablecidas en el input apa
         justify-content: space-between;
     }
 
-    .card-link .back {
-        display: block;
+    .card-link {
+        margin: 10px 0;
+        width: 32%;
+        height: 317px;
+        display:inline-block;
+        position:relative;
+    }
+
+    .project-content {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        padding:15px;
+        margin:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%
     }
     
     .card-link:hover {
         border-color: var(--green-color);
         color: var(--green-color);
-        transform-style: preserve-3d;
-        transform: rotateY(180deg);
         box-shadow: inset 0px 0px 10px #00BFA6;
-        background-color: #f6f7fb;
     }
     
-    .card-link:hover .project-content, .back {
-        backface-visibility: hidden;
-    }
-    
-    .card-link .back  {
-        transform: rotateY(180deg);
+    .card-link:hover img, .card-link:hover figcaption {
+        opacity: 0.07;
+        -webkit-transition: opacity .7s;
+        -moz-transition: opacity .7s;
+        -o-transition: opacity .7s;
+        -ms-transition: opacity .7s;
+        transition: opacity .7s;
     }
 
-
-    .card-link {
-        margin: 10px 0;
-        width: 32%;
-        height: 317px;
-        transition: transform 0.9s;
+    .card-link:hover .back {
+        opacity: 100%;
+        transform: scale(103%);
+        color: var(--green-color);
+        transition-delay: .9s;
+        transition: .9s;
     }
 
     .contact-section {
