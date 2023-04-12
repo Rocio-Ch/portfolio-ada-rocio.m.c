@@ -28,7 +28,7 @@ En este proyecto coloqué una breve descripción sobre mi, seguido de las herram
 ### Ver el proyecto
 Para poder visualizar el proyecto simplemente colocá el siguiente enlace en tu navegador preferido:
 
-https://cozy-croquembouche-220e01.netlify.app/#projects
+https://superlative-twilight-b799b8.netlify.app/
 
 Preview del proyecto:
 ![Preview del portfolio](/ilustrations1/portfolio-preview.jfif)
